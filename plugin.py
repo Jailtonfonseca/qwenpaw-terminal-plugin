@@ -22,7 +22,7 @@ from pathlib import Path
 
 from qwenpaw.plugins.api import PluginApi
 
-from backend.terminal_api import router
+from .backend.terminal_api import router
 
 logger = logging.getLogger(__name__)
 
@@ -51,7 +51,7 @@ class QwenPawTerminalPlugin:
         logger.info("[TerminalPlugin] HTTP router registered at /api/terminal")
 
         # ── 2. Agent Tools ─────────────────────────────────────────
-        from backend.shell_manager import shell_manager
+        from .backend.shell_manager import shell_manager
 
         # Tool: terminal_exec — Executa comando shell
         async def terminal_exec(command: str, cwd: str = None,
@@ -157,7 +157,7 @@ class QwenPawTerminalPlugin:
         async def on_shutdown():
             """Limpeza de todas as sessões ativas."""
             logger.info("[TerminalPlugin] Cleaning up shell sessions...")
-            from backend.shell_manager import shell_manager
+            from .backend.shell_manager import shell_manager
             await shell_manager.cleanup_all()
             logger.info("[TerminalPlugin] All sessions cleaned up")
 
