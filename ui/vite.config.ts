@@ -11,19 +11,9 @@ export default defineConfig({
       fileName: () => "index.js",
     },
     rollupOptions: {
-      external: [
-        "react",
-        "react-dom",
-        "react/jsx-runtime",
-        "antd",
-        "@ant-design/icons",
-      ],
+      external: ["react", "react-dom", "antd", "@ant-design/icons"],
     },
     target: "es2020",
     minify: "esbuild",
-  },
-  esbuild: {
-    loader: "tsx",
-    include: /\.tsx?$/,
   },
 });
