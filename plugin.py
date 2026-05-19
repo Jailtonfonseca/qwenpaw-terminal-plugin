@@ -168,3 +168,7 @@ class QwenPawTerminalPlugin:
         )
 
         logger.info("[TerminalPlugin] Registration complete!")
+
+
+# Export plugin instance (required by QwenPaw plugin loader)
+plugin = QwenPawTerminalPlugin()
