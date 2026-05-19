@@ -35,38 +35,26 @@ Execute comandos shell, scripts, gerencie processos e navegue pelo filesystem di
 - **Python 3.10+**
 - **Node.js 18+** (apenas para build do frontend)
 
-### Instalar pelo Console
+### 📥 Instalar pelo Console (ZIP URL)
+
+> ⚠️ O QwenPaw precisa de uma URL direta de ZIP, não da página do repositório.
 
 1. Vá em **Settings → Plugins**
 2. Clique em **Install**
-3. Informe a URL do repositório:
+3. Informe a URL direta do ZIP:
    ```
-   https://github.com/<seu-usuario>/qwenpaw-terminal-plugin
+   https://github.com/Jailtonfonseca/qwenpaw-terminal-plugin/archive/refs/heads/main.zip
    ```
 4. Clique em **Install** e aguarde
 
-### Instalar via ZIP
+### 📦 Instalar via Release (recomendado)
+
+Baixe o ZIP da **[última release](https://github.com/Jailtonfonseca/qwenpaw-terminal-plugin/releases)** e faça upload pelo Console.
+
+### 📁 Instalar via path local
 
 ```bash
-git clone https://github.com/<seu-usuario>/qwenpaw-terminal-plugin.git
-cd qwenpaw-terminal-plugin
-
-# Build do frontend
-cd ui
-npm install
-npm run build
-cd ..
-
-# Empacota
-zip -r qwenpaw-terminal-plugin.zip .
-```
-
-Depois faça upload do ZIP pelo Console.
-
-### Instalar via path local
-
-```bash
-git clone https://github.com/<seu-usuario>/qwenpaw-terminal-plugin.git /caminho/local/terminal
+git clone https://github.com/Jailtonfonseca/qwenpaw-terminal-plugin.git /caminho/local/terminal
 
 cd /caminho/local/terminal/ui
 npm install
