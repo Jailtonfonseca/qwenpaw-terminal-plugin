@@ -1,0 +1,45 @@
+{
+  "id": "qwenpaw-terminal",
+  "name": "QwenPaw Terminal",
+  "version": "1.0.0",
+  "type": "frontend",
+  "description": "Terminal de comando integrado ao QwenPaw com acesso total ao sistema. Execute shell commands, scripts, gerencie processos e navegue pelo filesystem diretamente pelo menu do QwenPaw.",
+  "author": "dev-agent",
+  "entry": {
+    "frontend": "ui/dist/index.js",
+    "backend": "plugin.py"
+  },
+  "dependencies": [],
+  "min_version": "1.1.7",
+  "meta": {
+    "category": "developer-tools",
+    "features": [
+      "shell-terminal",
+      "real-time-websocket",
+      "process-management",
+      "file-system-access",
+      "command-history",
+      "pty-support"
+    ],
+    "tools": [
+      {
+        "name": "terminal_exec",
+        "description": "Execute a shell command and return its output (non-interactive)",
+        "icon": "💻",
+        "requires_config": false
+      },
+      {
+        "name": "terminal_cwd",
+        "description": "Get or set the current working directory of the terminal",
+        "icon": "📂",
+        "requires_config": false
+      },
+      {
+        "name": "terminal_which",
+        "description": "Check if a command or program is available on the system PATH",
+        "icon": "🔍",
+        "requires_config": false
+      }
+    ]
+  }
+}
