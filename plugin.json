@@ -1,0 +1,25 @@
+{
+  "id": "qwenpaw-terminal-plugin",
+  "name": "System Terminal",
+  "version": "1.0.0",
+  "type": "general",
+  "description": "A fully functional system terminal in the QwenPaw sidebar. Access your shell directly from the UI with xterm.js, full PTY support, resize, themes, and more.",
+  "author": "dev-agent",
+  "entry": {
+    "frontend": "ui/dist/index.js",
+    "backend": "plugin.py"
+  },
+  "dependencies": [],
+  "min_version": "1.1.7",
+  "meta": {
+    "category": "system-tools",
+    "features": [
+      "interactive-terminal",
+      "pty-bridge",
+      "websocket-streaming",
+      "xterm-js",
+      "theme-support",
+      "terminal-resize"
+    ]
+  }
+}

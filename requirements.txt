@@ -1,0 +1,2 @@
+﻿# QwenPaw Terminal Plugin - Python dependencies
+# (No extra dependencies needed — uses only stdlib + FastAPI from host)
